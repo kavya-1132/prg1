@@ -1,0 +1,46 @@
+@keyframes example{
+	0% {background-color: red;}
+	25% {background-color: pink;}
+	50% {background-color: green;}
+	75% {background-color: yellow;}
+	100% {background-color: black;}
+	
+}
+.square{
+	width:100px;
+	height:100px;
+	background-color:red;
+	animation:example 5s infinite;
+}
+.svgsquare{
+	animation: examplesvg 5s infinite;
+}
+@keyframes examplesvg{
+	0% {fill: red;}
+	25% {fill: pink;}
+	50% {fill: green;}
+	75% {fill: yellow;}
+	100% {fill: black;}
+}
+.ball{
+	width:50px;
+	height:50px;
+	border-radius:100%;
+	position:absolute;
+	animation:corner 5s infinite;
+}
+@keyframes corner{
+	0% {top:0; left:0; background-color: red;}
+	25% {top:0;left:calc(100vw - 50px);background-color: pink;}
+	50% {top:calc(100vh - 50px);left:calc(100vw - 50px);background-color: green;}
+	75% {top:calc(100vh - 50px);left:0;background-color: yellow;}
+	100% {top:0;left:0;background-color: black;}
+}
+@keyframes vitc{
+	0% {font-family:aerial; font-size:12px; font-style:italic; top:0; left:0;}
+	50% {font-family:impact; font-size:36px; font-style:bold; top:calc(50vh - 50px); left:}
+	100% {font-family:aerial; font-size:12px; font-style:italic; top:0;}
+}
+.vit{
+	animation:vitc 5s infinite;
+}
